@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Lover 🤍</title>
+    <style>
+      /* Body styling */
+      body {
+        background: #e2d1c3;
+        width: 90%;
+        margin: 50px auto;
+      }
+
+      /* Main title styling */
+      h1 {
+        text-align: center;
+        font-weight: 600;
+        color: #6d4f37;
+        padding: 20px;
+        font-size: 50px;
+        margin: 20px 0 0 auto;
+      }
+
+      /* Subheading styling */
+      h2 {
+        text-align: center;
+        padding: 10px;
+        font-size: 18px;
+        border-radius: 4px;
+        color: #a28f70;
+      }
+
+      /* Coffee list section header */
+      h3 {
+        font-size: 16px;
+        color: #6d4f37;
+        font-weight: 600;
+        margin-left: 70px;
+      }
+
+      /* Image styling */
+      img {
+        display: block;
+        margin: 15px auto;
+        max-width: 70%;
+        border-radius: 10px;
+        filter: sepia(60%);
+      }
+
+      /* Image hover effect */
+      img:hover {
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+        transition: all 200ms ease-in-out;
+        filter: brightness(80%);
+        cursor: pointer;
+      }
+
+      /* Unordered list for coffee types */
+      ul {
+        list-style-type: none;
+        padding: 0;
+        max-width: 80%;
+        margin: 20px auto;
+      }
+
+      /* Paragraph text styling */
+      p {
+        line-height: 1.5;
+        font-size: 15px;
+        margin: 30px auto;
+        max-width: 80%;
+      }
+
+      /* Button styling */
+      button {
+        display: block;
+        margin: 30px auto;
+        background-color: #343233;
+        color: white;
+        font-size: 15px;
+        padding: 20px 30px;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+        cursor: pointer;
+      }
+
+      /* Button hover effect */
+      button:hover {
+        background-color: #9f8a7a;
+      }
+
+      /* Horizontal rule styling */
+      hr {
+        width: 80%;
+        margin: 15px auto;
+        border: 0.8px solid rgba(0, 0, 0, 0.2);
+      }
+
+      /* Main container styling */
+      .container {
+        max-width: 750px;
+        margin: 0 auto;
+        padding: 30px 60px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+        color: #999999;
+        border-radius: 10px;
+        background-color: #fffaf5;
+        font-family: Arial, sans-serif;
+        font-weight: 100;
+      }
+
+      /* Styling for coffee links */
+      .coffee-links {
+        font-size: 15px;
+        color: #999999;
+        font-weight: 200;
+      }
+
+      /* Coffee link hover effect */
+      .coffee-links:hover {
+        text-decoration: underline;
+        color: #c7b198;
+        cursor: pointer;
+      }
+
+      /* Learn more link styling */
+      .learn-more {
+        display: block;
+        margin: 10px 0 0 70px;
+        text-decoration: none;
+        font-size: 12px;
+        font-family: Arial, sans-serif;
+        color: #6d4f37;
+        font-weight: 600;
+      }
+
+      /* Learn more link hover effect */
+      .learn-more:hover {
+        text-decoration: underline;
+        color: black;
+      }
+
+      /* Footer styling */
+      .footer {
+        text-align: center;
+        font-size: 15px;
+        margin-top: 20px;
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      /* Footer link styling */
+      .footer-link {
+        text-decoration: none;
+        color: #6d4f37;
+      }
+
+      /* Footer link hover effect */
+      .footer-link:hover {
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Main title -->
+      <h1>Cozy Coffee Vibes</h1>
+      <hr />
+
+      <!-- Subheading -->
+      <h2>Snuggle Up with a Warm Cup ☕️</h2>
+
+      <!-- Coffee image -->
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/157/943/original/coffee.jpg?1739750232"
+        alt="Coffee"
+      />
+
+      <!-- Coffee description paragraph -->
+      <p>
+        <strong>Coffee</strong> is more than just a drink, it's a daily ritual
+        that fuels creativity and brings people together. With its rich aroma
+        and bold flavour, coffee can be enjoyed in countless ways, from a simple
+        black cup to a creamy espresso creation. Sourced from the finest beans
+        around the world, each cup tells a story of its origin. Whether it's a
+        morning pick-me-up or a midday indulgence, coffee connects us and helps
+        us power through the day.
+        <br />
+      </p>
+
+      <!-- Coffee selection list -->
+      <h3>Our selection of coffees are:</h3>
+      <ul>
+        <li class="coffee-links">Espresso</li>
+        <li class="coffee-links">Cappuccino</li>
+        <li class="coffee-links">Latte</li>
+        <li class="coffee-links">Americano</li>
+        <li class="coffee-links">Flat White</li>
+        <li class="coffee-links">Mocha</li>
+        <li class="coffee-links">Macchiato</li>
+        <li class="coffee-links">Matcha Green Tea Latte</li>
+        <li class="coffee-links">Frappucino</li>
+      </ul>
+
+      <!-- Learn more link -->
+      <a
+        href="https://en.wikipedia.org/wiki/Coffee"
+        target="_blank"
+        class="learn-more"
+        >Read more on Wikipedia</a
+      >
+
+      <!-- Order coffee button -->
+      <button class="buy-button">Order Coffee &nbsp;☕️</button>
+      <hr />
+
+      <!-- Footer with credit -->
+      <p class="footer">
+        👩🏻‍💻 Coded with 💞 by
+        <a
+          href="https://www.shecodes.io/graduates/68536-kezia-mccabe"
+          target="_blank"
+          class="footer-link"
+        >
+          Kezia McCabe</a
+        >
+        🛠️
+      </p>
+    </div>
+
+    <script>
+      // Function to toggle the button text between "Order Coffee" and "Order More?"
+      function toggleOrderButton() {
+        // Get the button element by its class name
+        let buyButton = document.querySelector(".buy-button");
+
+        // Check the current text inside the button
+        if (buyButton.innerHTML === "Order Coffee &nbsp;☕️") {
+          // If it's "Order Coffee", change it to "Order More?"
+          buyButton.innerHTML = "Order More Coffee? &nbsp;☕️";
+        } else {
+          // Otherwise, change it back to "Order Coffee"
+          buyButton.innerHTML = "Order Coffee &nbsp;☕️";
+        }
+      }
+
+      // Function to handle the coffee ordering process
+      function buyCoffee() {
+        // Ask the user for their name using a prompt and store the response
+        let name = prompt("What's your name?");
+        // Ask for the user's email
+        let email = prompt("What's your email?");
+        // Ask for the user's favorite coffee
+        let coffeeType = prompt("What is your favourite coffee?");
+
+        // Display a thank-you message with the user's name and coffee choice
+        alert(
+          `Thank you ${name}! We'll be in touch by email, meanwhile enjoy your ${coffeeType}! ☕️`
+        );
+
+        // After the order is placed, change the button text to "Order More?"
+        toggleOrderButton();
+      }
+
+      // Add an event listener to the "Order Coffee" button
+      // When the button is clicked, the buyCoffee function will run
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buyCoffee);
+    </script>
+  </body>
+</html>
