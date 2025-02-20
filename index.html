@@ -10,23 +10,27 @@
         background: #e2d1c3;
         width: 90%;
         margin: 50px auto;
+        font-family: roboto, sans-serif;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+        padding: 10px;
+        font-family: monospace, sans-serif;
       }
 
       /* Main title styling */
       h1 {
-        text-align: center;
         font-weight: 600;
         color: #6d4f37;
-        padding: 20px;
-        font-size: 50px;
-        margin: 20px 0 0 auto;
+        font-size: 38px;
+        margin: 40px 0 auto;
       }
 
       /* Subheading styling */
       h2 {
-        text-align: center;
-        padding: 10px;
-        font-size: 18px;
+        font-size: 15px;
         border-radius: 4px;
         color: #a28f70;
       }
@@ -36,49 +40,49 @@
         font-size: 16px;
         color: #6d4f37;
         font-weight: 600;
-        margin-left: 70px;
+        margin-left: 10px;
+        font-family: monospace, sans-serif;
       }
 
       /* Image styling */
       img {
-        display: block;
-        margin: 15px auto;
-        max-width: 70%;
-        border-radius: 10px;
-        filter: sepia(60%);
+        display: block; /* Make image a block element */
+        margin: 15px auto; /* Center the image and add some space around it */
+        max-width: 100%; /* Set a max width of 100% of the container's width */
+        border-radius: 10px; /* Round the corners of the image */
       }
 
       /* Image hover effect */
       img:hover {
+        filter: sepia(60%);
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
         transition: all 200ms ease-in-out;
-        filter: brightness(80%);
         cursor: pointer;
       }
 
       /* Unordered list for coffee types */
       ul {
         list-style-type: none;
-        padding: 0;
-        max-width: 80%;
-        margin: 20px auto;
+        padding: 15px;
+        margin: 0;
       }
 
       /* Paragraph text styling */
       p {
         line-height: 1.5;
-        font-size: 15px;
-        margin: 30px auto;
-        max-width: 80%;
+        font-size: 16px;
+        margin: 10px auto;
+        max-width: 95%;
       }
 
       /* Button styling */
       button {
         display: block;
-        margin: 30px auto;
+        margin: 50px auto;
         background-color: #343233;
         color: white;
-        font-size: 15px;
+        font-size: 16px;
+        font-weight: 600;
         padding: 20px 30px;
         border: none;
         border-radius: 30px;
@@ -95,7 +99,7 @@
       /* Horizontal rule styling */
       hr {
         width: 80%;
-        margin: 15px auto;
+        margin: 20px auto;
         border: 0.8px solid rgba(0, 0, 0, 0.2);
       }
 
@@ -114,7 +118,7 @@
 
       /* Styling for coffee links */
       .coffee-links {
-        font-size: 15px;
+        font-size: 16px;
         color: #999999;
         font-weight: 200;
       }
@@ -123,16 +127,16 @@
       .coffee-links:hover {
         text-decoration: none;
         color: #c7b198;
-        cursor: pointer;
+        font-weight: 600;
       }
 
       /* Learn more link styling */
       .learn-more {
         display: block;
-        margin: 10px 0 0 70px;
+        padding: 10px;
         text-decoration: none;
-        font-size: 12px;
-        font-family: Arial, sans-serif;
+        font-size: 14px;
+        font-family: monospace, sans-serif;
         color: #6d4f37;
         font-weight: 600;
       }
@@ -146,15 +150,18 @@
       /* Footer styling */
       .footer {
         text-align: center;
-        font-size: 15px;
-        margin-top: 20px;
-        font-family: "Courier New", Courier, monospace;
+        font-size: 14px;
+        margin-top: 30px 0;
+        font-family: monospace, sans-serif;
       }
 
       /* Footer link styling */
       .footer-link {
         text-decoration: none;
         color: #6d4f37;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: 600;
+        font-size: 16px;
       }
 
       /* Footer link hover effect */
@@ -166,21 +173,21 @@
     </style>
   </head>
   <body>
+    <!-- Main container that holds all the content -->
     <div class="container">
-      <!-- Main title -->
-      <h1>Cozy Coffee Vibes</h1>
+      <h1>Cozy Coffee Vibes ☕️</h1>
       <hr />
-
-      <!-- Subheading -->
-      <h2>Snuggle Up with a Warm Cup ☕️</h2>
+      <h2>Snuggle Up with a Warm Cup!</h2>
 
       <!-- Coffee image -->
-      <img
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/157/943/original/coffee.jpg?1739750232"
-        alt="Coffee"
-      />
+      <a href="https://en.wikipedia.org/wiki/Coffee" target="_blank">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/157/943/original/coffee.jpg?1739750232"
+          alt="Coffee"
+        />
+      </a>
 
-      <!-- Coffee description paragraph -->
+      <!-- Paragraph describing coffee -->
       <p>
         <strong>Coffee</strong> is more than just a drink, it's a daily ritual
         that fuels creativity and brings people together. With its rich aroma
@@ -192,7 +199,7 @@
         <br />
       </p>
 
-      <!-- Coffee selection list -->
+      <!-- List of coffee types -->
       <h3>Our selection of coffees are:</h3>
       <ul>
         <li class="coffee-links">Espresso</li>
@@ -206,19 +213,18 @@
         <li class="coffee-links">Frappucino</li>
       </ul>
 
-      <!-- Learn more link -->
+      <!-- Link to read more about coffee -->
       <a
         href="https://en.wikipedia.org/wiki/Coffee"
         target="_blank"
         class="learn-more"
-        >Read more on Wikipedia</a
+        >📖 Learn more</a
       >
-
-      <!-- Order coffee button -->
-      <button class="buy-button">Order Coffee &nbsp;☕️</button>
+      <!-- Button to order coffee -->
+      <button class="buy-button">Order Coffee ☕️</button>
       <hr />
 
-      <!-- Footer with credit -->
+      <!-- Footer section with a link to the creator -->
       <p class="footer">
         👩🏻‍💻 Coded with 💞 by
         <a
@@ -232,6 +238,7 @@
       </p>
     </div>
 
+    <!-- JavaScript function to handle the coffee ordering interaction -->
     <script>
       // Function to toggle the button text between "Order Coffee" and "Order More?"
       function toggleOrderButton() {
@@ -241,7 +248,7 @@
         // Check the current text inside the button
         if (buyButton.innerHTML === "Order Coffee &nbsp;☕️") {
           // If it's "Order Coffee", change it to "Order More?"
-          buyButton.innerHTML = "Order More Coffee? &nbsp;☕️";
+          buyButton.innerHTML = "Order More? &nbsp;☕️";
         } else {
           // Otherwise, change it back to "Order Coffee"
           buyButton.innerHTML = "Order Coffee &nbsp;☕️";
