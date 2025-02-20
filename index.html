@@ -44,20 +44,21 @@
         font-family: monospace, sans-serif;
       }
 
-      /* Image styling */
+      /* Image styling with border radius and sepia filter */
       img {
-        display: block; /* Make image a block element */
-        margin: 15px auto; /* Center the image and add some space around it */
-        max-width: 95%; /* Set a max width of 100% of the container's width */
-        border-radius: 10px; /* Round the corners of the image */
+        display: block;
+        margin: 15px auto;
+        max-width: 95%;
+        border-radius: 10px;
+        filter: sepia(60%);
+        transition: all 200ms ease-in-out;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
       }
 
-      /* Image hover effect */
+      /* Image hover effect with brightness filter */
       img:hover {
-        filter: sepia(60%);
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-        transition: all 200ms ease-in-out;
         cursor: pointer;
+        filter: brightness(1);
       }
 
       /* Unordered list for coffee types */
