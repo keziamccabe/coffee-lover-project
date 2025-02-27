@@ -1,2 +1,2 @@
-# coffee-lover-project
+# coffee-project
 coffee landing page project
